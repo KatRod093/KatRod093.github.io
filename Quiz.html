@@ -16,44 +16,47 @@
 <p class="p1">&lt;html&gt;</p>
 <p class="p2"><br></p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;meta charset=“utf-8’&gt;</p>
-<p class="p2"><br></p>
+<p class="p1">&lt;meta charter=“utf-8”&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p2"><br></p>
 <p class="p2"><br></p>
-<p class="p1">&lt;body data-gr-c-s-loaded&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;h1&gt; Which dessert represent you base on your favorite season &lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;button onclick=“newFunction()”&gt;<span class="Apple-converted-space">  </span>Winter &lt;/button&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;button onclick=“newFunction2()”&gt;Spring&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;button onclick=“newFunction3()”&gt; Summer&lt;/button</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt; What dessert are you base on the season you like&lt;/h1&gt;</p>
+<p class="p1">&lt;button onclick=“dataChoice()”&gt; Winter&lt;/button&gt; &lt;br&gt;</p>
+<p class="p1">&lt;button onclick=“dataChoice(1)”&gt; Fall&lt;/button&gt;&lt;br&gt;</p>
+<p class="p1">&lt;button onclick=“dataChoice(2)”&gt; Spring&lt;/button&gt;&lt;br&gt;</p>
+<p class="p1">&lt;button onclick=“dataChoice(3)”&gt; Summer&lt;/button&gt;&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id=“result”&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;h3&gt;Result &lt;/h3&gt;</p>
+<p class="p1">&lt;p id=“id=answer”&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>function myFunction(param) {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>value = param</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>switch{value) {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>text =“You are a Ice Cream;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 1:</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>text =“You are CupCake;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 2;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>text =“You are a Cookie;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>case 3:</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>text =“You are a churro;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>document.getElementById { ‘mytextbox’).innerHTML = text;<span class="Apple-tab-span">	</span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><br></p>
 <p class="p2"><span class="Apple-tab-span">	</span></p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;h3&gt;Result&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;p id=“answer”&gt;…&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></p>
+<p class="p1">&lt;/script&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">       </span>&lt;script&gt;</p>
-<p class="p2"><span class="Apple-tab-span">	</span></p>
-<p class="p1"><span class="Apple-tab-span">	</span>function newFunction ()<span class="Apple-converted-space">  </span>{</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>alert ( ‘button one’);</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>document.getElementById(‘answer”).innerHTML= “you are Ice Cream”;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p1">&lt;/body&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>function newFunction2 ()<span class="Apple-converted-space">  </span>{</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>alert ( ‘button one’);</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>document.getElementById(‘answer”).innerHTML= “you are a Cupcake”;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>function newFunction3 ()<span class="Apple-converted-space">  </span>{</p>
-<p class="p1"><span class="Apple-converted-space"> <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>alert ( ‘button one’);</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>document.getElementById(‘answer”).innerHTML= “you are<span class="Apple-converted-space">  </span>Cookie”;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1">&lt;/htlm&gt;</p>
 </body>
 </html>
