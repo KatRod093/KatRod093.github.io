@@ -1,200 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Avengers Trivia</title>
-</head>
-<body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center"><h1 class="maintitle">Avengers Trivia!</h1></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-4 ">
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="start">Start</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="pokemon.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Pokedex</h1>
+            <ul id="pokedex"></ul>
         </div>
-        <div class="col-lg-4 col-lg-offset-4 text-center">
-            <p id="time">Time Remaining:<span id="timer"></span></p>
-        </div>
-    </div>
-
-        <div class="form-group text-center">
-            <p>1. In what year did Marvel start?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">1939
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">1949
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">1936
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">1929
-                </label>
-            </form>
-            
-            <p>2. Where have the Hulk's stories often been set?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">American Northeast
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">American Northhwest
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">American Southwest
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">American Southeast
-                </label>
-            </form>
-
-            <p>3. What is Director Fury’s real name?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Nicholas
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Nick
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Klaus
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Nicola
-                </label>
-            </form>
-            
-            <p>4. How does Tony react when he sees Steve?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">He made fun of him
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">He offered him Berries
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">He ignored him
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">He said Hi!
-                </label>
-            </form>
-            
-            <p>5. Can you name all the superheroes?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Iron Man, Captain America, Hulk, Thor, loki Hawkeye, and Black Widow,Spriderman
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Iron Man, Hulk, Thor, Hawkeye, Black Widow and Captain America.
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Iron Man, Captain America, Hawkeye, Thor, Hulk, Bruce, and Black Widow
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Iron Man, Captain Marvel, Hulk, Thor, Hawkeye, and Black Widow.
-                </label>
-            </form>
-            
-            <p>6. Which Avengers team did not possess ”powers” or physical alterations, but were just extremely talented?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Clint
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Natasha
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Both
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">None
-                </label>
-            </form>
-            
-            <p>7. Before the epic fight in the woods, what did Iron Man refer to Thor as?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Tourst
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Tourist
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Point Break
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">God of Thunder
-                </label>
-            </form>
-			
-			<p>8. Who was the first member of the Avengers team that Natasha went to retrieve?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Steve
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Tony
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Bruce
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Thor
-                </label>
-            </form>
-			
-			<p>9. When Iron Man is struck by Thor’s lightning what happens?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Supercharge 400%
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Supercharge 4000%
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Supercharge 40%
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Supercharge 40400%
-                </label>
-            </form>
-			
-			<p>10. Name the first film in the Marvel Cinematic Universe?</p>
-            <form class="question">
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Hulk
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Captain America
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="wrong">Thor
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" name="optradio" class="optradio" value="goodanswer">Iron Man
-                </label>
-            </form>
-        </div>
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="done">DONE</button>
-        </div>
-    </div>
-
-</div><!-- content container -->
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="assets/javascript/app.js"></script>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
